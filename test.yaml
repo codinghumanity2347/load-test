@@ -9,13 +9,6 @@ spec:
   selector:
     matchLabels:
       app: infinite-calls
-  template:
-    metadata:
-      labels:
-        name: infinite-calls
-        labels:
-          app: infinite-calls
-    spec:
-      containers:
-        - name: infinite-calls
-          image: kritid9/load-testing:v1
+  containers:
+      - name: infinite-calls
+        image: kritid9/load-testing:v1
