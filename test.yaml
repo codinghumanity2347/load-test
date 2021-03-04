@@ -6,9 +6,6 @@ metadata:
     app: infinite-calls
 spec:
   replicas: 10
-  selector:
-    matchLabels:
-      app: infinite-calls
   containers:
       - name: infinite-calls
         image: kritid9/load-testing:v1
